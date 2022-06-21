@@ -15,8 +15,10 @@ alert("bienvenido a TuTienda !")
 
 do{
     seleccionProducto = parseInt(prompt("seleccione el prducto deseado :\n1. producto 1\n2. producto 2\n3. producto 3\n4. producto 4"))
+    
+    console.log(seleccionProducto)
 
-    if(seleccionProducto > 0 , seleccionProducto < 5){
+    if(seleccionProducto > 1 , seleccionProducto < 5){
         switch(seleccionProducto){
             case 1:
                 precio = producto1
@@ -40,7 +42,7 @@ do{
     alert("Usted no selecciono ningun producto")
     }
 
-}while(seleccionProducto < 1 || seleccionProducto > 4 )
+}while(seleccionProducto < 1 || seleccionProducto > 4 || isNaN(seleccionProducto))
 
 // sleccion de cantidad de cuotas
 
@@ -62,7 +64,7 @@ do{
         alert("Usted no selecciono un valor de cuotas valido")
     }
 
-}while(seleccionCuotas < 1 || seleccionCuotas > 3)
+}while(seleccionCuotas < 1 || seleccionCuotas > 3 || isNaN(seleccionCuotas))
 
 // confirmacion de compra 
 
