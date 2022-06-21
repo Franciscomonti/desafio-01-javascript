@@ -14,7 +14,7 @@ alert("bienvenido a TuTienda !")
 // seleccion de producto menu de opciones
 
 do{
-    seleccionProducto = parseInt(prompt("seleccione el prducto deseado :\n1. producto 1\n2. producto 2\n3. producto 3\n4. producto 4"))
+    seleccionProducto = parseInt(prompt("seleccione el producto deseado :\n1. producto 1\n2. producto 2\n3. producto 3\n4. producto 4"))
     
     console.log(seleccionProducto)
 
@@ -55,10 +55,10 @@ do{
         alert("Usted selecciono un pago sin interes\n" + "valor de la cuota es : $ " + valorcuota(precio, 1))
     }
     else if(seleccionCuotas == 2){
-        alert("Usted selecciono Tres pagos sin interes\n" + "valor de la cuota es : $ " + valorcuota(precio, 3))
+        alert("Usted selecciono tres pagos sin interes\n" + "valor de la cuota es : $ " + valorcuota(precio, 3))
     }
     else if(seleccionCuotas == 3){
-        alert("Usted selecciono Tres pagos sin interes\n" + "valor de la cuota es : $ " + valorcuota(precio, 6))
+        alert("Usted selecciono seis pagos sin interes\n" + "valor de la cuota es : $ " + valorcuota(precio, 6))
     }
     else{
         alert("Usted no selecciono un valor de cuotas valido")
