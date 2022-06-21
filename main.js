@@ -6,6 +6,9 @@ let seleccionProducto = 0
 function valorcuota(producto, cantidadcuotas){
     return producto / cantidadcuotas}
 
+
+// seleccion de producto menu de opciones
+
 do{
     seleccionProducto = parseInt(prompt("seleccione el prducto deseado :\n1. producto 1\n2. producto 2"))
 
@@ -18,7 +21,7 @@ do{
             case 2:
                 precio = producto2
                 alert("usted selecciono el producto 2 valor " + producto2)
-                reak
+                break
         }
     }
     else{
@@ -26,6 +29,8 @@ do{
     }
 
 }while(seleccionProducto < 0 || seleccionProducto > 3 )
+
+// sleccion de cantidad de cuotas
 
 let seleccionCuotas = 0
 
@@ -43,6 +48,8 @@ do{
     }
 
 }while(seleccionCuotas < 0 || seleccionCuotas > 2)
+
+// confirmacion de compra 
 
 let confirmacion = prompt("Confirma la compra ? Si/No")
 
