@@ -6,6 +6,8 @@ function mostrarMensaje(nombre, precio) {
     alert("Usted selecciono el producto " + nombre + " valor " + precio)
 }
 
+// seleccion de producto menu de opciones
+
 function seleccionProducto() {
     let producto1 = 100
     let producto2 = 200
@@ -13,8 +15,6 @@ function seleccionProducto() {
     let producto4 = 400
 
     let seleccionProducto = 0
-
-    // seleccion de producto menu de opciones
 
     do {
         seleccionProducto = parseInt(prompt("seleccione el producto deseado :\n1. producto 1\n2. producto 2\n3. producto 3\n4. producto 4"))
@@ -40,8 +40,10 @@ function seleccionProducto() {
     } while (seleccionProducto < 1 || seleccionProducto > 4 || isNaN(seleccionProducto))
 }
 
+// seleccion de cantidad de cuotas
+
 function seleccionCuotas(precio) {
-    // seleccion de cantidad de cuotas
+
 
     let seleccionCuotas = 0
 
@@ -61,8 +63,9 @@ function seleccionCuotas(precio) {
     } while (seleccionCuotas < 1 || seleccionCuotas > 3 || isNaN(seleccionCuotas))
 }
 
+// confirmacion de compra 
+
 function confirmar() {
-    // confirmacion de compra 
 
     let confirmacion = prompt("Confirma la compra ? Si/No")
 
@@ -73,6 +76,8 @@ function confirmar() {
     }
 }
 
+// funcion para dar orden a las otras funciones
+
 function principal() {
     alert("bienvenido a TuTienda !")
 
@@ -82,5 +87,7 @@ function principal() {
 
     confirmar()
 }
+
+//iniciador de las funciones
 
 principal()
